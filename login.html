@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LMS Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class="logo">LMSPORTAL</div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="login.html">Login</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+    <div class="container">
+    <div class="cards">
+    <!-- Registration Form -->
+    <div id="registerForm">
+        <h2>Student Registration</h2>
+
+        <p>create an account</p>
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+
+        <button onclick="registerUser()">Register</button>
+
+        <div class="switch">
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="hidden">
+        <h2>Student Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="loginUser()">Login</button>
+
+        <div class="switch">
+            Don't have an account?
+            <a  href="#" onclick="showRegister()">Register</a>
+        </div>
+    </div>
+
+    <p id="message" class="message"></p>
+  </div>
+</div>
+
+   <footer>
+        <p>&copy; 2026 LMS Portal. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

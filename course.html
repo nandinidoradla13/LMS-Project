@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class="logo">LMS PORTAL</div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="login.html">Login</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+  <h1>Available Courses</h1>
+  <div class="cards">
+
+    <div>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.ueaKSyANUxCOQx8RVaCiKQHaHa?pid=Api&h=220&P=0" alt="Web Development">
+      <p>Web Development Basics</p>
+      <button class="enroll-btn" onclick="showForm('Web Development Basics')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.k5AnhqasGlDwX1xXR5oW9QHaEK?pid=Api&h=220&P=0" alt="HTML CSS">
+      <p>HTML & CSS Fundamentals</p>
+      <button class="enroll-btn" onclick="showForm('HTML&CSS Fundamentals')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.VgcDbZtvRThnSNbJyvtTvQHaHa?pid=Api&h=220&P=0" alt="JavaScript">
+      <p>JavaScript Essentials</p>
+     <button class="enroll-btn" onclick="showForm('JavaScriptEssencial')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.cSShcLEtJV5oPcNajCV6sAHaHa?pid=Api&h=220&P=0" alt="React">
+      <p>React Basics</p>
+      <button class="enroll-btn" onclick="showForm('React Basics')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.LOlzZYYbQXBX6jnNBYB5ogHaHa?pid=Api&h=220&P=0" alt="Python">
+      <p>Python Programming</p>
+      <button class="enroll-btn" onclick="showForm('Python Programming')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.wyY7fa7FHVIsdcoGwdybXQHaHa?pid=Api&h=220&P=0" alt="Java">
+      <p>Java Programming</p>
+      <button class="enroll-btn" onclick="showForm('Java Programming')">
+    Enroll Now
+</button>
+    </div>
+
+    <div>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.QbXDpOIXe2_46a8o1UG8AQHaD1?pid=Api&h=220&P=0" alt="C Programming">
+      <p>C Programming</p>
+      <button class="enroll-btn" onclick="showForm('C Programming')">
+    Enroll Now
+</button>
+    </div>
+
+  </div>
+  <!-- Enrollment Form -->
+<div id="enrollForm" class="form-popup">
+    <div class="form-content">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+
+        <h2>Course Enrollment Form</h2>
+
+        <form>
+            <input type="text" id="courseName" readonly>
+
+            <input type="text" placeholder="Enter Full Name" required>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="tel" placeholder="Enter Mobile Number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+
+  <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 LMS PORTAL. All rights reserved.</p>
+    </footer>
+</body>
+</html>
